@@ -77,6 +77,35 @@
 </head>
 
 <body>
+  <!-- Inspect disable -->
+   <script>
+    // document.addEventListener("contextmenu", function(event){
+    //   alert("Inspect Elements Not Allowed");
+    //   event.preventDefault();
+    // })
+    document.addEventListener('contextmenu',(e)=>{
+    e.preventDefault();
+  }
+  );
+  document.onkeydown = function(e) {
+  if(event.keyCode == 123) {
+     return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+     return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+     return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+     return false;
+  }
+  if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+     return false;
+  }
+}
+Us
+   </script>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
         height="0" width="0" style="display:none;visibility:hidden"></iframe>
@@ -466,7 +495,7 @@ such as login/sign up, view a product, add a product to cart, checkout the order
                     data-tooltip="View Online"
                     class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
                       class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/rujal404/tetris-js"
+                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/rujal404/"
                     target="_blank" data-position="top" data-tooltip="View Source"
                     class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
                       class="fa fa-github"></i></a>
